@@ -42,8 +42,6 @@ body {
 
 #countdown {
      display: flex;
-     justify-content: space-between;
-     align-items: center;
 }
 
 .counter {
@@ -70,6 +68,14 @@ body {
 .text {
      font-size: 1.5rem;
      font-weight: 400;
+}
+
+.inactive {
+     visibility: hidden;
+}
+
+.active {
+     visibility: visible;
 }
 
 @media screen and (max-width: 767px){

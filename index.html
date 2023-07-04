@@ -5,16 +5,17 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="CSS/main.css">
      <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-     <!-- <script defer src="/JavaScript/matrix.js"></script> -->
-     <script defer src="JavaScript/countdown.js"></script>
+     <script id="matrix-scpt" defer src="JavaScript/matrix.js"></script>
+     <script id="countdown-scpt" defer src="JavaScript/countdown.js"></script>
      <title>Document</title>
 </head>
 
 <body>
-     <main class="container">
-          <div id="countdown"></div>
-          <!-- <canvas id="canvas"></canvas>
-          <div class="overlay"></div> -->
+     <main class="container ">
+          <div id="countdown" class="active"></div>
+          <canvas id="canvas" class="inactive"></canvas>
+          <div class="overlay inactive"></div>
+          <img src="Misc/morpheus.png" class="morpheus inactive" alt="">
      </main>     
 </body>
 

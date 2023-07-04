@@ -1,3 +1,7 @@
+const overlay = document.querySelector('.overlay')
+const countcontainer = document.getElementById('countdown')
+const morpheus = document.querySelector('.morpheus')
+
 const getRemainTime = deadline => {
      let now = new Date()
      let remainTime = (new Date(deadline) - now + 1000) / 1000
@@ -15,7 +19,7 @@ const getRemainTime = deadline => {
      }
 }
 
-const countDown = (deadline, element, finalMessage) => {
+const countDown = (deadline, element) => {
      const elem = document.getElementById(element)
 
      const timerUpdate = setInterval(() => {
@@ -31,9 +35,14 @@ const countDown = (deadline, element, finalMessage) => {
 
           if (time.remainTime <= 1) {
                clearInterval(timerUpdate)
-               elem.innerHTML = finalMessage
-          }
+               overlay.classList.toggle('active')
+               canvas.classList.toggle('active')
+               morpheus.classList.toggle('active')
+               countcontainer.classList.toggle('inactive')
+               countcontainer.classList.remove('active')
+          } 
      }, 1000)
 }
 
-countDown('Sun Oct 21 2023 00:00:00 GMT-0300','countdown','sas')
+countDown('Tue Jul 4 2023 17:55:00 GMT-0300','countdown')
+// countDown('Sun Oct 21 2023 00:00:00 GMT-0300','countdown')

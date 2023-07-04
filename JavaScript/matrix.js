@@ -4,11 +4,6 @@ const ctx = canvas.getContext('2d')
 
 window.addEventListener('resize', resizeCanvas, false)
 
-const img = document.createElement('img')
-img.src = '../Misc/morpheus.png'
-container.appendChild(img)
-img.setAttribute('class', 'morpheus')
-
 let w = canvas.width
 let h = canvas.height
 let colums = Math.floor(w / 20) + 1
