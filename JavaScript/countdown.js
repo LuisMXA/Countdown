@@ -45,4 +45,5 @@ const countDown = (deadline, element) => {
      }, 1000)
 }
 
-countDown('Sun Oct 21 2023 00:00:00 GMT-0300','countdown')
+countDown('Tue Jul 4 2023 18:25:35 GMT-0300','countdown')
+//countDown('Sun Oct 21 2023 00:00:00 GMT-0300','countdown')
