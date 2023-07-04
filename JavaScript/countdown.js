@@ -40,9 +40,9 @@ const countDown = (deadline, element) => {
                morpheus.classList.toggle('active')
                countcontainer.classList.toggle('inactive')
                countcontainer.classList.remove('active')
+               
           } 
      }, 1000)
 }
-
-countDown('Tue Jul 4 2023 17:55:00 GMT-0300','countdown')
+countDown('Tue Jul 4 2023 18:15:35 GMT-0300','countdown')
 // countDown('Sun Oct 21 2023 00:00:00 GMT-0300','countdown')
